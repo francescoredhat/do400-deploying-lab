@@ -13,6 +13,7 @@ sh "./mvnw verify"
 }
 
 
+
 stage("Build & Push Image") {
 steps {
 sh '''
@@ -45,4 +46,5 @@ oc set image deployment home-automation home-automation=quay.io/${QUAY_USR}/do40
 }
 }
 
+}
 }
