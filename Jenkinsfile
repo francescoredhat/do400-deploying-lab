@@ -33,7 +33,6 @@ sh '''
 }
 }
 
-}
 
 stage('Deploy to TEST') {
 when { not { branch "main" } }
